@@ -10,4 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *tfHere;
+@property (strong, nonatomic) IBOutlet UILabel *lbThere;
+
+- (IBAction)printThere:(id)sender;
+
 @end

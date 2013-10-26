@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize tfHere, lbThere;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)printThere:(id)sender
+{
+    lbThere.text = tfHere.text;
+    
+    [sender resignFirstResponder];
 }
 
 @end
